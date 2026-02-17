@@ -1,6 +1,6 @@
 This repository contains the complete source code used in the paper "Algebraic and analytic structure of Morikawa’s sangaku problem."
 
-Repository Contents
+Repository Contents:
 
 1. numerical_mu.sage
 Implements high-precision numerical evaluation of the function
