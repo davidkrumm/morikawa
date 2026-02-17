@@ -130,7 +130,6 @@ print("Approximate a = lambda(1) ≈", a,"\n")
 #
 # ---------------------------------------------------------------------------
 
-
 # Number field K = QQ(alpha) where alpha is a root of n(y).
 K.<alpha> = NumberField(n)
 
@@ -178,7 +177,6 @@ def NewtonSeriesRoot(Fpoly, Fy, prec, iters=0):
 
     return yser
 
-
 def TaylorSeriesLambda(prec=40, iters=0):
     """
     Compute the Taylor series y(t) for λ(1+t) in K[[t]] to O(t^prec),
@@ -192,7 +190,6 @@ def TaylorSeriesLambda(prec=40, iters=0):
     Fy = Fpoly.derivative(Y)
 
     return NewtonSeriesRoot(Fpoly, Fy, prec, iters=iters)
-
 
 # Expansion of λ(1+t) in K[[t]].
 lambda_1p = TaylorSeriesLambda(prec=40)
